@@ -1,0 +1,49 @@
+unit AddCustomer;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Vcl.Mask,
+  Vcl.DBCtrls;
+
+type
+  TAddCustomerForm = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  AddCustomerForm: TAddCustomerForm;
+
+implementation
+
+{$R *.dfm}
+
+uses DelphiTest;
+
+procedure TAddCustomerForm.Button1Click(Sender: TObject);
+begin
+  MainForm.FDQuery1.Cancel();
+  Close();
+end;
+
+procedure TAddCustomerForm.Button2Click(Sender: TObject);
+begin
+  MainForm.FDQuery1.Post();
+  Close();
+end;
+
+end.

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.061,=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.707,=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.347,C:\Projects\DelphiTest\Unit1.pas=C:\Projects\DelphiTest\UI\CreditTransactions\AddCreditTransaction.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.860,=C:\Users\oadmin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.745,C:\Projects\DelphiTest\DelphiTest.pas=C:\Users\oadmin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.768,=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.412,=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.371,C:\Projects\DelphiTest\Unit1.pas=C:\Projects\DelphiTest\UI\Report.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.927,C:\Projects\DelphiTest\Test.dproj=C:\Users\oadmin\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.319,C:\Projects\DelphiTest\DAL\Entities\Order.pas=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.450,=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.212,C:\Projects\DelphiTest\Unit1.pas=C:\Projects\DelphiTest\UI\Orders\AddOrder.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.771,=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.199,=C:\Users\oadmin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.371,C:\Projects\DelphiTest\Unit1.dfm=C:\Projects\DelphiTest\UI\Report.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.347,C:\Projects\DelphiTest\Unit1.dfm=C:\Projects\DelphiTest\UI\CreditTransactions\AddCreditTransaction.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.212,C:\Projects\DelphiTest\Unit1.dfm=C:\Projects\DelphiTest\UI\Orders\AddOrder.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.704,C:\Projects\DelphiTest\DAL\Repositories\CustomerRepository.pas=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.653,C:\Projects\DelphiTest\DAL\Entities\CreditTransaction.pas=C:\Projects\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.343,=C:\Projects\DelphiTest\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.579,C:\Projects\DelphiTest\Unit2.dfm=C:\Projects\DelphiTest\UI\Customers\AddCustomer.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.454,C:\Projects\DelphiTest\DAL\Entities\Customer.pas=C:\Users\oadmin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.579,C:\Projects\DelphiTest\Unit2.pas=C:\Projects\DelphiTest\UI\Customers\AddCustomer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.745,C:\Projects\DelphiTest\DelphiTest.dfm=C:\Users\oadmin\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024.01.17 13:43:17.548,C:\Projects\DelphiTest\DAL\Entities\CreditTransaction.pas=</Transaction>
+    <Transaction>2024.01.17 13:43:17.562,C:\Projects\DelphiTest\DAL\Entities\Customer.pas=</Transaction>
+    <Transaction>2024.01.17 13:43:17.563,C:\Projects\DelphiTest\DAL\Entities\Order.pas=</Transaction>
+    <Transaction>2024.01.17 13:43:20.268,C:\Projects\DelphiTest\DAL\Repositories\CustomerRepository.pas=</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="UI"/>
+    <File Path="UI\CreditTransactions"/>
+    <File Path="UI\CreditTransactions\AddCreditTransaction.pas"/>
+    <File Path="UI\CreditTransactions\AddCreditTransaction.dfm"/>
+    <File Path="UI\Customers"/>
+    <File Path="UI\Customers\AddCustomer.pas"/>
+    <File Path="UI\Customers\AddCustomer.dfm"/>
+    <File Path="UI\Orders"/>
+    <File Path="UI\Orders\AddOrder.pas"/>
+    <File Path="UI\Orders\AddOrder.dfm"/>
+    <File Path="UI\Report.pas"/>
+    <File Path="UI\Report.dfm"/>
+    <File Path="DelphiTest.pas"/>
+    <File Path="DelphiTest.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

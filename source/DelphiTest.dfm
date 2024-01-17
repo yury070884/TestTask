@@ -1,0 +1,762 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 598
+  ClientWidth = 795
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 19
+    Top = 366
+    Width = 72
+    Height = 13
+    Caption = 'Specify Code'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 19
+    Top = 16
+    Width = 134
+    Height = 29
+    Caption = 'CUSTOMERS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 18
+    Top = 403
+    Width = 89
+    Height = 29
+    Caption = 'ORDERS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 426
+    Top = 403
+    Width = 169
+    Height = 29
+    Caption = 'TRANSACTIONS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 18
+    Top = 210
+    Width = 161
+    Height = 19
+    Caption = 'CUSTOMER'#39'S ORDERS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 274
+    Top = 210
+    Width = 120
+    Height = 19
+    Caption = 'TRANSACTIONS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 535
+    Top = 239
+    Width = 85
+    Height = 23
+    Caption = 'Start Date'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 538
+    Top = 274
+    Width = 78
+    Height = 23
+    Caption = 'End Date'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 19
+    Top = 51
+    Width = 414
+    Height = 120
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'code'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'name'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'address'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VAT'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'creditLimit'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'salesVolume'
+        Width = 60
+        Visible = True
+      end>
+  end
+  object Button1: TButton
+    Left = 18
+    Top = 172
+    Width = 75
+    Height = 25
+    Caption = 'Add'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 99
+    Top = 172
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 180
+    Top = 172
+    Width = 75
+    Height = 25
+    Caption = 'Delete'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object DBGrid2: TDBGrid
+    Left = 18
+    Top = 438
+    Width = 402
+    Height = 120
+    DataSource = DataSource2
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'customerCode'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'date'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'serviceDescription'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'saleValue'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'id'
+        Width = 60
+        Visible = True
+      end>
+  end
+  object Button4: TButton
+    Left = 18
+    Top = 564
+    Width = 75
+    Height = 25
+    Caption = 'Add'
+    TabOrder = 5
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 99
+    Top = 564
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    TabOrder = 6
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 180
+    Top = 564
+    Width = 75
+    Height = 25
+    Caption = 'Delete'
+    TabOrder = 7
+    OnClick = Button6Click
+  end
+  object DBGrid3: TDBGrid
+    Left = 426
+    Top = 438
+    Width = 353
+    Height = 120
+    DataSource = DataSource3
+    TabOrder = 8
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'customerCode'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'date'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'creditValue'
+        Visible = True
+      end>
+  end
+  object Button7: TButton
+    Left = 426
+    Top = 564
+    Width = 75
+    Height = 25
+    Caption = 'Add'
+    TabOrder = 9
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 506
+    Top = 564
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    TabOrder = 10
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 587
+    Top = 564
+    Width = 75
+    Height = 25
+    Caption = 'Delete'
+    TabOrder = 11
+    OnClick = Button9Click
+  end
+  object Edit1: TEdit
+    Left = 99
+    Top = 363
+    Width = 57
+    Height = 21
+    BiDiMode = bdLeftToRight
+    NumbersOnly = True
+    ParentBiDiMode = False
+    TabOrder = 12
+    Text = '1'
+  end
+  object DBGrid4: TDBGrid
+    Left = 19
+    Top = 235
+    Width = 249
+    Height = 120
+    DataSource = DataSource4
+    TabOrder = 13
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'date'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'serviceDescription'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'saleValue'
+        Width = 50
+        Visible = True
+      end>
+  end
+  object DBGrid5: TDBGrid
+    Left = 274
+    Top = 235
+    Width = 217
+    Height = 120
+    DataSource = DataSource5
+    TabOrder = 14
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'date'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'creditValue'
+        Visible = True
+      end>
+  end
+  object Button10: TButton
+    Left = 162
+    Top = 361
+    Width = 106
+    Height = 25
+    Caption = 'Find'
+    TabOrder = 15
+    OnClick = Button10Click
+  end
+  object DatePicker1: TDatePicker
+    Left = 629
+    Top = 235
+    Date = 45307.000000000000000000
+    DateFormat = 'dd/MM/yyyy'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    TabOrder = 16
+  end
+  object DatePicker2: TDatePicker
+    Left = 629
+    Top = 273
+    Date = 45309.000000000000000000
+    DateFormat = 'dd/MM/yyyy'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    TabOrder = 17
+  end
+  object Button11: TButton
+    Left = 629
+    Top = 311
+    Width = 150
+    Height = 25
+    Caption = 'Get Report'
+    TabOrder = 18
+    OnClick = Button11Click
+  end
+  object Button12: TButton
+    Left = 668
+    Top = 564
+    Width = 111
+    Height = 25
+    Caption = 'Appendt from CSV'
+    TabOrder = 19
+    OnClick = Button12Click
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Server=localhost,1440'
+      'Database=DelphiTest'
+      'User_Name=sa'
+      'Password=RaynorRaiders44'
+      'DriverID=MSSQL')
+    Connected = True
+    Left = 24
+    Top = 472
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from Customer')
+    Left = 288
+    Top = 472
+    object FDQuery1code: TFDAutoIncField
+      FieldName = 'code'
+      Origin = 'code'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDQuery1name: TWideStringField
+      FieldName = 'name'
+      Origin = 'name'
+      Size = 100
+    end
+    object FDQuery1address: TWideStringField
+      FieldName = 'address'
+      Origin = 'address'
+      Size = 100
+    end
+    object FDQuery1VAT: TWideStringField
+      FieldName = 'VAT'
+      Origin = 'VAT'
+      Required = True
+      Size = 11
+    end
+    object FDQuery1creditLimit: TBCDField
+      FieldName = 'creditLimit'
+      Origin = 'creditLimit'
+      Precision = 12
+      Size = 2
+    end
+    object FDQuery1salesVolume: TBCDField
+      FieldName = 'salesVolume'
+      Origin = 'salesVolume'
+      Precision = 12
+      Size = 2
+    end
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    Left = 56
+    Top = 472
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 88
+    Top = 472
+  end
+  object FDUpdateSQL1: TFDUpdateSQL
+    Connection = FDConnection1
+    Left = 120
+    Top = 472
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 288
+    Top = 520
+  end
+  object DataSource2: TDataSource
+    DataSet = FDQuery2
+    Left = 352
+    Top = 520
+  end
+  object DataSource3: TDataSource
+    DataSet = FDQuery3
+    Left = 416
+    Top = 520
+  end
+  object FDQuery2: TFDQuery
+    Active = True
+    AfterInsert = FDQuery2AfterInsert
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from [DelphiTest].[dbo].[Order]')
+    Left = 352
+    Top = 472
+    object FDQuery2customerCode: TIntegerField
+      FieldName = 'customerCode'
+      Required = True
+    end
+    object FDQuery2date: TSQLTimeStampField
+      FieldName = 'date'
+    end
+    object FDQuery2serviceDescription: TWideStringField
+      FieldName = 'serviceDescription'
+      Size = 200
+    end
+    object FDQuery2saleValue: TBCDField
+      FieldName = 'saleValue'
+      Required = True
+      Precision = 12
+      Size = 2
+    end
+    object FDQuery2id: TFDAutoIncField
+      FieldName = 'id'
+      ReadOnly = True
+    end
+  end
+  object FDQuery3: TFDQuery
+    Active = True
+    AfterInsert = FDQuery3AfterInsert
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from CreditTransaction')
+    Left = 416
+    Top = 472
+    object FDQuery3id: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDQuery3customerCode: TIntegerField
+      FieldName = 'customerCode'
+      Origin = 'customerCode'
+      Required = True
+    end
+    object FDQuery3date: TSQLTimeStampField
+      FieldName = 'date'
+      Origin = 'date'
+    end
+    object FDQuery3creditValue: TBCDField
+      FieldName = 'creditValue'
+      Origin = 'creditValue'
+      Required = True
+      Precision = 12
+      Size = 2
+    end
+  end
+  object DataSource4: TDataSource
+    DataSet = FDQuery4
+    Left = 488
+    Top = 520
+  end
+  object FDQuery4: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from [DelphiTest].[dbo].[Order]'
+      'where customerCode = :code')
+    Left = 488
+    Top = 472
+    ParamData = <
+      item
+        Name = 'CODE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = 1
+      end>
+    object FDQuery4date: TSQLTimeStampField
+      FieldName = 'date'
+      Origin = 'date'
+    end
+    object FDQuery4serviceDescription: TWideStringField
+      FieldName = 'serviceDescription'
+      Origin = 'serviceDescription'
+      Size = 200
+    end
+    object FDQuery4saleValue: TBCDField
+      FieldName = 'saleValue'
+      Origin = 'saleValue'
+      Required = True
+      Precision = 12
+      Size = 2
+    end
+  end
+  object DataSource5: TDataSource
+    DataSet = FDQuery5
+    Left = 528
+    Top = 520
+  end
+  object FDQuery5: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from CreditTransaction'
+      'where customerCode = :code')
+    Left = 528
+    Top = 472
+    ParamData = <
+      item
+        Name = 'CODE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+    object FDQuery5date: TSQLTimeStampField
+      FieldName = 'date'
+      Origin = 'date'
+    end
+    object FDQuery5creditValue: TBCDField
+      FieldName = 'creditValue'
+      Origin = 'creditValue'
+      Required = True
+      Precision = 12
+      Size = 2
+    end
+  end
+  object FDQuery6: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from [DelphiTest].[dbo].[Order]'
+      'where customerCode = :code and date between :date1 and :date2')
+    Left = 608
+    Top = 472
+    ParamData = <
+      item
+        Name = 'CODE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'DATE1'
+        DataType = ftDate
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'DATE2'
+        DataType = ftDate
+        ParamType = ptInput
+        Value = Null
+      end>
+    object FDQuery6date: TSQLTimeStampField
+      FieldName = 'date'
+      Origin = 'date'
+    end
+    object FDQuery6serviceDescription: TWideStringField
+      FieldName = 'serviceDescription'
+      Origin = 'serviceDescription'
+      Size = 200
+    end
+    object FDQuery6saleValue: TBCDField
+      FieldName = 'saleValue'
+      Origin = 'saleValue'
+      Required = True
+      Precision = 12
+      Size = 2
+    end
+  end
+  object DataSource6: TDataSource
+    DataSet = FDQuery6
+    Left = 608
+    Top = 520
+  end
+  object FDBatchMove1: TFDBatchMove
+    Reader = FDBatchMoveTextReader1
+    Writer = FDBatchMoveSQLWriter1
+    Mappings = <>
+    LogFileName = 'Data.log'
+    Analyze = [taDelimSep, taFormatSet, taHeader, taFields]
+    OnWriteValue = FDBatchMove1WriteValue
+    Left = 392
+    Top = 16
+  end
+  object FDQuery7: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from CreditTransaction')
+    Left = 688
+    Top = 8
+  end
+  object FDBatchMoveTextReader1: TFDBatchMoveTextReader
+    DataDef.Fields = <>
+    Left = 496
+    Top = 8
+  end
+  object FDQuery8: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'update Customer'
+      'set creditLimit = creditLimit + :value'
+      'where code = :code')
+    Left = 552
+    Top = 184
+    ParamData = <
+      item
+        Name = 'VALUE'
+        DataType = ftFloat
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'CODE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+  object FDBatchMoveSQLWriter1: TFDBatchMoveSQLWriter
+    Connection = FDConnection1
+    TableName = 'DelphiTest.dbo.CreditTransaction'
+    CreateTableParts = []
+    Left = 200
+    Top = 8
+  end
+  object DataSource7: TDataSource
+    DataSet = FDQuery7
+    Left = 320
+    Top = 16
+  end
+end

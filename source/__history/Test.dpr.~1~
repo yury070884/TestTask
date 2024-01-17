@@ -1,0 +1,15 @@
+program Test;
+
+uses
+  Vcl.Forms,
+  DelphiTest in 'DelphiTest.pas' {Form1},
+  Customer in 'DAL\Entities\Customer.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

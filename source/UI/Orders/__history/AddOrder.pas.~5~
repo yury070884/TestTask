@@ -1,0 +1,65 @@
+unit AddOrder;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Vcl.Mask,
+  Vcl.DBCtrls;
+
+type
+  TAddOrderForm = class(TForm)
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    DataSource1: TDataSource;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Button1: TButton;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  AddOrderForm: TAddOrderForm;
+
+implementation
+
+{$R *.dfm}
+
+uses DelphiTest;
+
+procedure TAddOrderForm.Button1Click(Sender: TObject);
+begin
+  MainForm.FDQuery2.Cancel();
+  Close();
+end;
+
+procedure TAddOrderForm.Button2Click(Sender: TObject);
+var
+  currentCreditLimit, saleValue : real;
+begin
+  currentCreditLimit := MainForm.FDQuery1.FieldByName('creditLimit').AsFloat;
+  saleValue := StrToFloat(DBEdit3.Text);
+  if currentCreditLimit < saleValue then
+  begin
+    ShowMessage('Not enough credit');
+  end
+  else
+  begin
+    MainForm.FDQuery2.Post();
+    MainForm.FDQuery1.Edit();
+    MainForm.FDQuery1.FieldByName('creditLimit').AsFloat := currentCreditLimit - saleValue;
+    MainForm.FDQuery1.FieldByName('salesVolume').AsFloat := MainForm.FDQuery1.FieldByName('salesVolume').AsFloat + saleValue;
+    MainForm.FDQuery1.Post();
+  end;
+  Close();
+end;
+
+end.

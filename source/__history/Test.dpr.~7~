@@ -1,0 +1,22 @@
+program Test;
+
+uses
+  Vcl.Forms,
+  DelphiTest in 'DelphiTest.pas' {MainForm},
+  Customer in 'DAL\Entities\Customer.pas',
+  Order in 'DAL\Entities\Order.pas',
+  CreditTransaction in 'DAL\Entities\CreditTransaction.pas',
+  CustomerRepository in 'DAL\Repositories\CustomerRepository.pas',
+  AddCustomer in 'UI\Customers\AddCustomer.pas' {AddCustomerForm},
+  AddOrder in 'UI\Orders\AddOrder.pas' {AddOrderForm};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TMainForm, MainForm);
+  Application.CreateForm(TAddCustomerForm, AddCustomerForm);
+  Application.CreateForm(TAddOrderForm, AddOrderForm);
+  Application.Run;
+end.
