@@ -1,0 +1,27 @@
+Caminho: C:\Users\oadmin\Desktop\fortesreport-ce-master\
+Versão do delphi: Delphi 10.3 Rio (0)
+Plataforma: Win32(0)
+================================================================================
+Setando parâmetros de plataforma...
+Criando diretórios de bibliotecas...
+Adicionando library paths...
+
+Compiling package C:\Users\oadmin\Desktop\fortesreport-ce-master\Packages\frce.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\Users\oadmin\Desktop\fortesreport-ce-master\Packages\frce.dpk" --no-config -B -$O- -$W+ -$Y- -M -Q -H- -W- -DRELEASE -U"C:\Program Files (x86)\Embarcadero\Studio\20.0\lib\Win32\release" -U"c:\program files (x86)\embarcadero\studio\20.0\lib\Win32\release;C:\Users\oadmin\Documents\Embarcadero\Studio\20.0\Imports;c:\program files (x86)\embarcadero\studio\20.0\Imports;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Dcp;c:\program files (x86)\embarcadero\studio\20.0\include;;;;C:\Program Files (x86)\FortesReport\Binary\LibD26;C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -U"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -I"c:\program files (x86)\embarcadero\studio\20.0\lib\Win32\release;C:\Users\oadmin\Documents\Embarcadero\Studio\20.0\Imports;c:\program files (x86)\embarcadero\studio\20.0\Imports;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Dcp;c:\program files (x86)\embarcadero\studio\20.0\include;;;;C:\Program Files (x86)\FortesReport\Binary\LibD26;C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -R"c:\program files (x86)\embarcadero\studio\20.0\lib\Win32\release;C:\Users\oadmin\Documents\Embarcadero\Studio\20.0\Imports;c:\program files (x86)\embarcadero\studio\20.0\Imports;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Dcp;c:\program files (x86)\embarcadero\studio\20.0\include;;;;C:\Program Files (x86)\FortesReport\Binary\LibD26;C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -N0"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -LE"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -LN"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -NS"Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+115376 lines, 0.80 seconds, 647816 bytes code, 17484 bytes data.
+Compilation success
+
+Installing package C:\Users\oadmin\Desktop\fortesreport-ce-master\Packages\dclfrce.dpk
+Compiling package C:\Users\oadmin\Desktop\fortesreport-ce-master\Packages\dclfrce.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\Users\oadmin\Desktop\fortesreport-ce-master\Packages\dclfrce.dpk" --no-config -B -$O- -$W+ -$Y- -M -Q -H- -W- -DRELEASE -U"C:\Program Files (x86)\Embarcadero\Studio\20.0\lib\Win32\release" -U"c:\program files (x86)\embarcadero\studio\20.0\lib\Win32\release;C:\Users\oadmin\Documents\Embarcadero\Studio\20.0\Imports;c:\program files (x86)\embarcadero\studio\20.0\Imports;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Dcp;c:\program files (x86)\embarcadero\studio\20.0\include;;;;C:\Program Files (x86)\FortesReport\Binary\LibD26;C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -U"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -I"c:\program files (x86)\embarcadero\studio\20.0\lib\Win32\release;C:\Users\oadmin\Documents\Embarcadero\Studio\20.0\Imports;c:\program files (x86)\embarcadero\studio\20.0\Imports;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Dcp;c:\program files (x86)\embarcadero\studio\20.0\include;;;;C:\Program Files (x86)\FortesReport\Binary\LibD26;C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -R"c:\program files (x86)\embarcadero\studio\20.0\lib\Win32\release;C:\Users\oadmin\Documents\Embarcadero\Studio\20.0\Imports;c:\program files (x86)\embarcadero\studio\20.0\Imports;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Dcp;c:\program files (x86)\embarcadero\studio\20.0\include;;;;C:\Program Files (x86)\FortesReport\Binary\LibD26;C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -N0"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -LE"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -LN"C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26" -NS"Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+4920 lines, 0.31 seconds, 14248 bytes code, 236 bytes data.
+Compilation success
+Cleaning package cache for dclfrce.bpl
+Cleaning ok
+Registering package C:\Users\oadmin\Desktop\fortesreport-ce-master\Binary\LibD26\dclfrce.bpl
+Registration ok
+Installation of package finished
